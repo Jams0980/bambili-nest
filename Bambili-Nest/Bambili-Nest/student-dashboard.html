@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Dashboard | Bambili Nest</title>
+
+    <link rel="stylesheet" href="student-dashboard.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <a href="index.html" class="brand">
+
+        <div class="brand-logo">
+            <svg viewBox="0 0 64 64" aria-hidden="true">
+                <path d="M8 29L32 8l24 21"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"/>
+
+                <path d="M16 27v25h32V27"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="5"
+                      stroke-linejoin="round"/>
+
+                <rect x="26" y="35" width="6" height="6" rx="1"
+                      fill="currentColor"/>
+
+                <rect x="35" y="35" width="6" height="6" rx="1"
+                      fill="currentColor"/>
+
+                <path d="M10 51c7 9 23 12 39 1"
+                      fill="none"
+                      stroke="#1fa34a"
+                      stroke-width="5"
+                      stroke-linecap="round"/>
+            </svg>
+        </div>
+
+        <div class="brand-text">
+            <h2>Bambili <span>Nest</span></h2>
+            <p>Find. Compare. Rent with Confidence.</p>
+        </div>
+
+    </a>
+
+
+    <nav class="nav">
+
+        <a href="index.html">Home</a>
+
+        <a href="property.html">Listings</a>
+
+        <a href="student-dashboard.html" class="active">
+            Dashboard
+        </a>
+
+        <a href="contact.html">
+            Contact Us
+        </a>
+
+    </nav>
+
+
+    <div class="nav-actions">
+
+        <a href="profile.html" class="profile-mini">
+
+            <div class="profile-avatar">
+                S
+            </div>
+
+            <span>Student</span>
+
+        </a>
+
+        <a href="login.html" class="logout-btn">
+            Logout
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- ================= DASHBOARD HERO ================= -->
+
+<section class="dashboard-hero">
+
+    <div class="hero-inner">
+
+        <div>
+
+            <span class="welcome-label">
+                STUDENT DASHBOARD
+            </span>
+
+            <h1>
+                Welcome back,
+                <span>Student!</span>
+            </h1>
+
+            <p>
+                Manage your accommodation search, saved properties,
+                reviews and account information from one place.
+            </p>
+
+        </div>
+
+        <a href="property.html" class="browse-btn">
+            Browse Properties
+            <span>→</span>
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= MAIN DASHBOARD ================= -->
+
+<main class="dashboard-container">
+
+
+    <!-- ================= QUICK STATS ================= -->
+
+    <section class="stats">
+
+        <div class="stat-card">
+
+            <div class="stat-icon blue">
+                <svg viewBox="0 0 24 24">
+                    <circle cx="11" cy="11" r="7"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"/>
+
+                    <path d="M16.5 16.5L21 21"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"/>
+                </svg>
+            </div>
+
+            <div>
+                <strong>15</strong>
+                <p>Properties Viewed</p>
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon green">
+                <svg viewBox="0 0 24 24">
+                    <path d="M20.8 8.7
+                             c0-3-2.4-5.2-5.3-5.2
+                             c-1.7 0-3.4.8-4.5 2.1
+                             C10 4.3 8.3 3.5 6.6 3.5
+                             c-2.9 0-5.3 2.2-5.3 5.2
+                             c0 5.5 9.7 11.3 9.7 11.3
+                             s9.8-5.8 9.8-11.3z"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"/>
+                </svg>
+            </div>
+
+            <div>
+                <strong>5</strong>
+                <p>Saved Properties</p>
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon orange">
+                <svg viewBox="0 0 24 24">
+                    <path d="M4 5h16v12H4z"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linejoin="round"/>
+
+                    <path d="M8 21h8"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"/>
+
+                    <path d="M8 9h8M8 13h5"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"/>
+                </svg>
+            </div>
+
+            <div>
+                <strong>3</strong>
+                <p>Reviews Posted</p>
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon purple">
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 3l2.2 4.5L19 8.2l-3.5 3.4
+                             .8 4.8L12 14.2 7.7 16.4l.8-4.8
+                             L5 8.2l4.8-.7z"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linejoin="round"/>
+                </svg>
+            </div>
+
+            <div>
+                <strong>4.8</strong>
+                <p>Your Rating</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= DASHBOARD GRID ================= -->
+
+    <section class="dashboard-section">
+
+        <div class="section-title">
+
+            <div>
+                <span>ACCOUNT MANAGEMENT</span>
+
+                <h2>
+                    Manage Your Account
+                </h2>
+            </div>
+
+        </div>
+
+
+        <div class="dashboard-grid">
+
+
+            <!-- PROFILE -->
+
+            <a href="profile.html" class="dashboard-card">
+
+                <div class="card-icon green">
+
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="12" cy="8" r="4"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"/>
+
+                        <path d="M4 21c0-4 3.5-7 8-7s8 3 8 7"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"/>
+                    </svg>
+
+                </div>
+
+                <div class="card-content">
+
+                    <h3>My Profile</h3>
+
+                    <p>
+                        View and update your personal
+                        information and contact details.
+                    </p>
+
+                    <span class="card-link">
+                        Open Profile →
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <!-- SAVED PROPERTIES -->
+
+            <a href="saved-properties.html" class="dashboard-card">
+
+                <div class="card-icon red">
+
+                    <svg viewBox="0 0 24 24">
+                        <path d="M20.8 8.7
+                                 c0-3-2.4-5.2-5.3-5.2
+                                 c-1.7 0-3.4.8-4.5 2.1
+                                 C10 4.3 8.3 3.5 6.6 3.5
+                                 c-2.9 0-5.3 2.2-5.3 5.2
+                                 c0 5.5 9.7 11.3 9.7 11.3
+                                 s9.8-5.8 9.8-11.3z"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"/>
+                    </svg>
+
+                </div>
+
+                <div class="card-content">
+
+                    <h3>Saved Properties</h3>
+
+                    <p>
+                        Quickly access houses and rooms
+                        you saved for later.
+                    </p>
+
+                    <span class="card-link">
+                        View Saved Homes →
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <!-- REVIEWS -->
+
+            <a href="reviews.html" class="dashboard-card">
+
+                <div class="card-icon yellow">
+
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 3l2.2 4.5L19 8.2l-3.5 3.4
+                                 .8 4.8L12 14.2 7.7 16.4l.8-4.8
+                                 L5 8.2l4.8-.7z"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linejoin="round"/>
+                    </svg>
+
+                </div>
+
+                <div class="card-content">
+
+                    <h3>Reviews</h3>
+
+                    <p>
+                        Read, manage and share your
+                        accommodation experiences.
+                    </p>
+
+                    <span class="card-link">
+                        Manage Reviews →
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <!-- SETTINGS -->
+
+            <a href="settings.html" class="dashboard-card">
+
+                <div class="card-icon blue">
+
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="3"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"/>
+
+                        <path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1-1.7 1.7-.1-.1
+                                 a1.7 1.7 0 0 0-1.9-.3
+                                 1.7 1.7 0 0 0-1 1.6V22h-2.4v-.1
+                                 a1.7 1.7 0 0 0-1-1.6
+                                 1.7 1.7 0 0 0-1.9.3l-.1.1L8 19l.1-.1
+                                 A1.7 1.7 0 0 0 8.4 17
+                                 1.7 1.7 0 0 0 6.8 16H6.6v-2.4h.2
+                                 a1.7 1.7 0 0 0 1.6-1
+                                 1.7 1.7 0 0 0-.3-1.9L8 10.6l1.7-1.7.1.1
+                                 a1.7 1.7 0 0 0 1.9.3
+                                 1.7 1.7 0 0 0 1-1.6V7h2.4v.2
+                                 a1.7 1.7 0 0 0 1 1.6
+                                 1.7 1.7 0 0 0 1.9-.3l.1-.1
+                                 1.7 1.7-.1.1a1.7 1.7 0 0 0-.3 1.9
+                                 1.7 1.7 0 0 0 1.6 1h.2v2.4h-.2
+                                 a1.7 1.7 0 0 0-1.6 1z"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="1.5"
+                              stroke-linejoin="round"/>
+                    </svg>
+
+                </div>
+
+                <div class="card-content">
+
+                    <h3>Settings</h3>
+
+                    <p>
+                        Manage your account preferences,
+                        password and security.
+                    </p>
+
+                    <span class="card-link">
+                        Open Settings →
+                    </span>
+
+                </div>
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= RECENT ACTIVITY ================= -->
+
+    <section class="activity-section">
+
+        <div class="section-title">
+
+            <div>
+                <span>RECENT ACTIVITY</span>
+
+                <h2>
+                    Your Recent Activity
+                </h2>
+            </div>
+
+            <a href="property.html" class="view-all">
+                Browse Listings →
+            </a>
+
+        </div>
+
+
+        <div class="activity-card">
+
+            <div class="activity-item">
+
+                <div class="activity-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M20.8 8.7
+                                 c0-3-2.4-5.2-5.3-5.2
+                                 c-1.7 0-3.4.8-4.5 2.1
+                                 C10 4.3 8.3 3.5 6.6 3.5
+                                 c-2.9 0-5.3 2.2-5.3 5.2
+                                 c0 5.5 9.7 11.3 9.7 11.3
+                                 s9.8-5.8 9.8-11.3z"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"/>
+                    </svg>
+                </div>
+
+                <div>
+                    <strong>Saved a property</strong>
+                    <p>You saved a new accommodation listing.</p>
+                </div>
+
+                <small>Today</small>
+
+            </div>
+
+
+            <div class="activity-item">
+
+                <div class="activity-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M4 5h16v12H4z"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"/>
+
+                        <path d="M8 9h8M8 13h5"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"/>
+                    </svg>
+                </div>
+
+                <div>
+                    <strong>Posted a review</strong>
+                    <p>Your property review was successfully posted.</p>
+                </div>
+
+                <small>Yesterday</small>
+
+            </div>
+
+
+            <div class="activity-item">
+
+                <div class="activity-icon">
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="12" cy="8" r="4"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"/>
+
+                        <path d="M4 21c0-4 3.5-7 8-7s8 3 8 7"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"/>
+                    </svg>
+                </div>
+
+                <div>
+                    <strong>Updated profile</strong>
+                    <p>Your account information was updated.</p>
+                </div>
+
+                <small>3 days ago</small>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= QUICK HELP ================= -->
+
+    <section class="help-card">
+
+        <div class="help-icon">
+
+            <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="9"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"/>
+
+                <path d="M9.5 9a2.5 2.5 0 1 1 4.3 1.7
+                         c-.9.9-1.8 1.2-1.8 2.3"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"/>
+
+                <circle cx="12" cy="16.8" r="1"
+                        fill="currentColor"/>
+            </svg>
+
+        </div>
+
+        <div>
+
+            <h3>Need help finding a room?</h3>
+
+            <p>
+                Browse our available properties or contact
+                the Bambili Nest team for assistance.
+            </p>
+
+        </div>
+
+        <a href="contact.html">
+            Contact Us →
+        </a>
+
+    </section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <div>
+
+            <h3>
+                Bambili <span>Nest</span>
+            </h3>
+
+            <p>
+                Find. Compare. Rent with Confidence.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h4>Quick Links</h4>
+
+            <a href="index.html">Home</a>
+            <a href="property.html">Listings</a>
+            <a href="about.html">About Us</a>
+        </div>
+
+
+        <div>
+
+            <h4>Contact</h4>
+
+            <p>bambilinest@gmail.com</p>
+            <p>+237 676 453 289</p>
+            <p>Bambili, Cameroon</p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        © 2026 Bambili Nest. All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>

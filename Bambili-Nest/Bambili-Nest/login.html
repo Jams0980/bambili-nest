@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Bambili Nest</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f7fa;
+            color: #222;
+        }
+
+        header {
+            background: #12372a;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 22px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #f4c542;                                                                                                                                                                                                                          
+        }
+
+        .login-container {
+            min-height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .login-box {
+            background: white;
+            width: 100%;
+            max-width: 430px;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+        }
+
+        .login-box h1 {
+            text-align: center;
+            color: #12372a;
+            margin-bottom: 10px;
+        }
+
+        .login-box p {
+            text-align: center;
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 7px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 13px;
+            margin-bottom: 18px;
+            border: 1px solid #ccc;
+            border-radius: 7px;
+            font-size: 15px;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #12372a;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            background: #12372a;
+            color: white;
+            border: none;
+            border-radius: 7px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1d5a43;
+        }
+
+        .signup {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .signup a {
+            color: #12372a;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        footer {
+            background: #12372a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Bambili Nest</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+    </nav>
+</header>
+
+<section class="login-container">
+
+    <div class="login-box">
+
+        <h1>Welcome Back</h1>
+        <p>Login to your Bambili Nest account</p>
+
+        <form>
+
+            <label for="email">Email Address</label>
+            <input 
+                type="email" 
+                id="email" 
+                placeholder="Enter your email"
+                required
+            >
+
+            <label for="password">Password</label>
+            <input 
+                type="password" 
+                id="password" 
+                placeholder="Enter your password"
+                required
+            >
+
+            <button type="submit">Login</button>
+
+        </form>
+
+        <div class="signup">
+            Don't have an account?
+            <a href="#">Create Account</a>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>&copy; 2026 Bambili Nest. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

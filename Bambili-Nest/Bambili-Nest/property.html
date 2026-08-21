@@ -1,0 +1,2229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Properties | Bambili Nest</title>
+
+    <link rel="stylesheet" href="property.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ============
+     HEADER
+========== -->
+
+<header class="header">
+
+    <a href="index.html" class="logo">
+
+        <div class="logo-icon">
+
+            <!-- L icon library -->
+
+            <svg viewBox="0 0 64 64">
+
+                <path
+                    d="M8 29L32 8l24 21"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+
+                <path
+                    d="M16 27v25h32V27"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="5"
+                />
+
+                <rect
+                    x="24"
+                    y="34"
+                    width="7"
+                    height="7"
+                    rx="1"
+                    fill="currentColor"
+                />
+
+                <rect
+                    x="34"
+                    y="34"
+                    width="7"
+                    height="7"
+                    rx="1"
+                    fill="currentColor"
+                />
+
+                <path
+                    d="M10 51c8 9 25 11 40 0"
+                    fill="none"
+                    stroke="#1fa34a"
+                    stroke-width="5"
+                    stroke-linecap="round"
+                />
+
+            </svg>
+
+        </div>
+
+
+        <div class="logo-text">
+
+            <h1>Bambili <span>Nest</span></h1>
+
+            <p>Find. Compare. Rent with Confidence.</p>
+
+        </div>
+
+    </a>
+
+
+    <nav class="nav">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="property.html" class="active">
+            Listings
+        </a>
+
+        <a href="about.html">
+            About Us
+        </a>
+
+        <a href="contact.html">
+            Contact Us
+        </a>
+
+    </nav>
+
+
+    <div class="header-actions">
+
+        <a
+            href="login.html"
+            class="login-btn"
+        >
+            Login
+        </a>
+
+        <a
+            href="register.html"
+            class="register-btn"
+        >
+            Register
+        </a>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     PAGE HERO
+===================================================== -->
+
+<section class="listing-hero">
+
+    <div class="hero-content">
+
+        <span class="eyebrow">
+            BAMBILI STUDENT ACCOMMODATION
+        </span>
+
+        <h1>
+            Find Your Perfect
+            <span>Student Home</span>
+        </h1>
+
+        <p>
+            Browse verified student rooms, studios and apartments
+            across Bambili. Compare prices, locations and property
+            details before making your decision.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SEARCH / FILTER
+===================================================== -->
+
+<section class="search-section">
+
+    <div class="search-box">
+
+        <div class="search-field">
+
+            <label for="location">
+                Location
+            </label>
+
+            <select id="location">
+
+                <option value="all">
+                    All Areas
+                </option>
+
+                <option value="up">
+                    Up Quarter
+                </option>
+
+                <option value="down">
+                    Down Quarter
+                </option>
+
+                <option value="school">
+                    School Area
+                </option>
+
+                <option value="commercial">
+                    Commercial Area
+                </option>
+
+                <option value="campus">
+                    Campus Area
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div class="search-field">
+
+            <label for="propertyType">
+                Property Type
+            </label>
+
+            <select id="propertyType">
+
+                <option value="all">
+                    All Types
+                </option>
+
+                <option value="room">
+                    Single Room
+                </option>
+
+                <option value="studio">
+                    Studio
+                </option>
+
+                <option value="apartment">
+                    Apartment
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div class="search-field">
+
+            <label for="price">
+                Maximum Price
+            </label>
+
+            <select id="price">
+
+                <option value="all">
+                    Any Price
+                </option>
+
+                <option value="100000">
+                    FCFA 100,000
+                </option>
+
+                <option value="200000">
+                    FCFA 200,000
+                </option>
+
+                <option value="300000">
+                    FCFA 300,000
+                </option>
+
+                <option value="500000">
+                    FCFA 500,000
+                </option>
+
+                <option value="700000">
+                    FCFA 700,000
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <button
+            type="button"
+            class="search-button"
+            onclick="filterProperties()"
+        >
+
+            <span class="search-icon">
+
+                <svg viewBox="0 0 24 24">
+
+                    <circle
+                        cx="11"
+                        cy="11"
+                        r="7"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                    />
+
+                    <path
+                        d="M16 16l5 5"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                    />
+
+                </svg>
+
+            </span>
+
+            Search
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     LISTING HEADER
+===================================================== -->
+
+<section class="listing-section">
+
+    <div class="listing-heading">
+
+        <div>
+
+            <span class="small-title">
+                AVAILABLE HOMES
+            </span>
+
+            <h2>
+                Student Properties in Bambili
+            </h2>
+
+            <p>
+                Explore accommodation options that match your needs.
+            </p>
+
+        </div>
+
+
+        <div class="listing-count">
+
+            <strong id="propertyCount">
+                25+
+            </strong>
+
+            <span>
+                Properties
+            </span>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================================
+         PROPERTY GRID
+    ================================================== -->
+
+    <div class="properties" id="propertyGrid">
+
+
+        <!-- PROPERTY 1 -->
+
+        <article
+            class="card"
+            data-location="up"
+            data-type="room"
+            data-price="150000"
+        >
+
+            <div class="image-wrapper">
+
+                <img
+                    src="images/133e9d005b8fa92759283f5d855398bb.jpg"
+                    alt="Student Room in Bambili"
+                    loading="lazy"
+                >
+
+                <span class="verified">
+                    ✓ Verified
+                </span>
+
+                <button
+                    class="save-button"
+                    onclick="saveProperty(this)"
+                    aria-label="Save property"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+
+            <div class="card-body">
+
+                <span class="property-type">
+                    Student Room
+                </span>
+
+                <h3>
+                    Student Room
+                </h3>
+
+                <p class="location">
+
+                    <span>⌖</span>
+
+                    Bambili, Up Quarter
+
+                </p>
+
+                <div class="card-bottom">
+
+                    <div>
+
+                        <strong class="price">
+                            FCFA 150,000
+                        </strong>
+
+                        <span class="per-year">
+                            / Year
+                        </span>
+
+                    </div>
+
+                </div>
+         <a href="contact.html" class="Contact-button">
+                    contact Us <span>→</span>
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PROPERTY 2 -->
+
+        <article
+            class="card"
+            data-location="up"
+            data-type="studio"
+            data-price="150000"
+        >
+
+            <div class="image-wrapper">
+
+                <img
+                    src="images/f0deff0d005d7d591fb8fc9bd0930e8e.jpg"
+                    alt="Studio Apartment in Bambili"
+                    loading="lazy"
+                >
+
+                <span class="verified">
+                    ✓ Verified
+                </span>
+
+                <button
+                    class="save-button"
+                    onclick="saveProperty(this)"
+                    aria-label="Save property"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+
+            <div class="card-body">
+
+                <span class="property-type">
+                    Studio
+                </span>
+
+                <h3>
+                    Studio Apartment
+                </h3>
+
+                <p class="location">
+                    <span>⌖</span>
+                    Up Quarter Mile 10, Bambili
+                </p>
+
+                <div class="card-bottom">
+
+                    <strong class="price">
+                        FCFA 150,000
+                    </strong>
+
+                    <span class="per-year">
+                        / Year
+                    </span>
+
+                </div>
+
+                 <a href="contact.html" class="Contact-button">
+                    contact Us <span>→</span>
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PROPERTY 3 -->
+
+        <article
+            class="card"
+            data-location="school"
+            data-type="apartment"
+            data-price="210000"
+        >
+
+            <div class="image-wrapper">
+
+                <img
+                    src="images/7bdb6f336ca030e2e00936376bb03f16.jpg"
+                    alt="Shared Apartment in Bambili"
+                    loading="lazy"
+                >
+
+                <span class="verified">
+                    ✓ Verified
+                </span>
+
+                <button
+                    class="save-button"
+                    onclick="saveProperty(this)"
+                    aria-label="Save property"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+
+            <div class="card-body">
+
+                <span class="property-type">
+                    Apartment
+                </span>
+
+                <h3>
+                    Shared Apartment
+                </h3>
+
+                <p class="location">
+                    <span>⌖</span>
+                    School Area, Corners Bambili
+                </p>
+
+                <div class="card-bottom">
+
+                    <strong class="price">
+                        FCFA 210,000
+                    </strong>
+
+                    <span class="per-year">
+                        / Year
+                    </span>
+
+                </div>
+           <a href="contact.html" class="Contact-button">
+                    contact Us <span>→</span>
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PROPERTY 4 -->
+
+        <article
+            class="card"
+            data-location="down"
+            data-type="room"
+            data-price="120000"
+        >
+
+            <div class="image-wrapper">
+
+                <img
+                    src="images/89282d37289030f7b95cae2dc5bb0ece.jpg"
+                    alt="Single Room in Bambili"
+                    loading="lazy"
+                >
+
+                <span class="verified">
+                    ✓ Verified
+                </span>
+
+                <button
+                    class="save-button"
+                    onclick="saveProperty(this)"
+                    aria-label="Save property"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+
+            <div class="card-body">
+
+                <span class="property-type">
+                    Single Room
+                </span>
+
+                <h3>
+                    Single Room
+                </h3>
+
+                <p class="location">
+                    <span>⌖</span>
+                    Down Quarter, Plaza City Bambili
+                </p>
+
+                <div class="card-bottom">
+
+                    <strong class="price">
+                        FCFA 120,000
+                    </strong>
+
+                    <span class="per-year">
+                        / Year
+                    </span>
+
+                </div>
+
+                <a href="contact.html" class="Contact-button">
+                    contact Us <span>→</span>
+                </a>
+            </div>
+
+        </article>
+
+
+
+        <!-- PROPERTY 5 -->
+
+        <article
+            class="card"
+            data-location="commercial"
+            data-type="apartment"
+            data-price="300000"
+        >
+
+            <div class="image-wrapper">
+
+                <img
+                    src="images/8b9a4aeaec0190f1d857899e47a55f88.jpg"
+                    alt="Apartment in Bambili"
+                    loading="lazy"
+                >
+
+                <span class="verified">
+                    ✓ Verified
+                </span>
+
+                <button
+                    class="save-button"
+                    onclick="saveProperty(this)"
+                    aria-label="Save property"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+
+            <div class="card-body">
+
+                <span class="property-type">
+                    Apartment
+                </span>
+
+                <h3>
+                    Apartment
+                </h3>
+
+                <p class="location">
+                    <span>⌖</span>
+                    Commercial Area, HK City Bambili
+                </p>
+
+                <p class="features-text">
+                    Room, toilet and kitchen
+                </p>
+
+                <div class="card-bottom">
+
+                    <strong class="price">
+                        FCFA 300,000
+                    </strong>
+
+                    <span class="per-year">
+                        / Year
+                    </span>
+
+                </div>
+
+              <a href="contact.html" class="Contact-button">
+                    contact Us <span>→</span>
+                </a>
+            </div>
+
+        </article>
+
+
+
+        <!-- PROPERTY 6 -->
+
+        <article
+            class="card"
+            data-location="all"
+            data-type="apartment"
+            data-price="120000"
+        >
+
+            <div class="image-wrapper">
+
+                <img
+                    src="images/59b70acda7b872b5cb1ddf7bc4d06320 (1).jpg"
+                    alt="Apartment in Bambili"
+                    loading="lazy"
+                >
+
+                <span class="verified">
+                    ✓ Verified
+                </span>
+
+                <button
+                    class="save-button"
+                    onclick="saveProperty(this)"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="card-body">
+
+                <span class="property-type">
+                    Apartment
+                </span>
+
+                <h3>
+                    Apartment
+                </h3>
+
+                <p class="location">
+                    <span>⌖</span>
+                    ENS Street 728, Bambili
+                </p>
+
+                <div class="card-bottom">
+
+                    <strong class="price">
+                        FCFA 120,000
+                    </strong>
+
+                    <span class="per-year">
+                        / Year
+                    </span>
+
+                </div>
+
+             <a href="contact.html" class="Contact-button">
+                    contact Us <span>→</span>
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PROPERTY 7 -->
+
+        <article
+            class="card"
+            data-location="commercial"
+            data-type="apartment"
+            data-price="510000"
+        >
+
+            <div class="image-wrapper">
+
+                <img
+                    src="images/80fb6be9d250ce0f436ff534f275bafd.jpg"
+                    alt="Apartment in Bambili"
+                    loading="lazy"
+                >
+
+                <span class="verified">
+                    ✓ Verified
+                </span>
+
+                <button
+                    class="save-button"
+                    onclick="saveProperty(this)"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="card-body">
+
+                <span class="property-type">
+                    Apartment
+                </span>
+
+                <h3>
+                    Apartment
+                </h3>
+
+                <p class="location">
+                    <span>⌖</span>
+                    Commercial Area, Bueaw City Bambili
+                </p>
+
+                <div class="card-bottom">
+
+                    <strong class="price">
+                        FCFA 510,000
+                    </strong>
+
+                    <span class="per-year">
+                        / Year
+                    </span>
+
+                </div>
+
+               <a href="contact.html" class="Contact-button">
+                    contact Us <span>→</span>
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PROPERTY 8 -->
+
+        <article
+            class="card"
+            data-location="all"
+            data-type="apartment"
+            data-price="500000"
+        >
+
+            <div class="image-wrapper">
+
+                <img
+                    src="images/f0a0ccde8a19ba3f30c0b08096e1e7d0.jpg"
+                    alt="Apartment in Bambili"
+                    loading="lazy"
+                >
+
+                <span class="verified">
+                    ✓ Verified
+                </span>
+
+                <button
+                    class="save-button"
+                    onclick="saveProperty(this)"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="card-body">
+
+                <span class="property-type">
+                    Apartment
+                </span>
+
+                <h3>
+                    Apartment
+                </h3>
+
+                <p class="location">
+                    <span>⌖</span>
+                    Man Help City, Bambili
+                </p>
+
+                <div class="card-bottom">
+
+                    <strong class="price">
+                        FCFA 500,000
+                    </strong>
+
+                    <span class="per-year">
+                        / Year
+                    </span>
+
+                </div>
+
+               <a href="contact.html" class="Contact-button">
+                    contact Us <span>→</span>
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PROPERTY 9 -->
+
+        <article
+            class="card"
+            data-location="all"
+            data-type="apartment"
+            data-price="340000"
+        >
+
+            <div class="image-wrapper">
+
+                <img
+                    src="images/bfb7318f3565a728d39c0de1ce170769.jpg"
+                    alt="Student Apartment in Bambili"
+                    loading="lazy"
+                >
+
+                <span class="verified">
+                    ✓ Verified
+                </span>
+
+                <button
+                    class="save-button"
+                    onclick="saveProperty(this)"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="card-body">
+
+                <span class="property-type">
+                    Student Apartment
+                </span>
+
+                <h3>
+                    Student Apartment
+                </h3>
+
+                <p class="location">
+                    <span>⌖</span>
+                    1277 City Area, Bambili
+                </p>
+
+                <div class="card-bottom">
+
+                    <strong class="price">
+                        FCFA 340,000
+                    </strong>
+
+                    <span class="per-year">
+                        / Year
+                    </span>
+
+                </div>
+
+               <a href="contact.html" class="Contact-button">
+                    contact Us <span>→</span>
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PROPERTY 10 -->
+
+        <article
+            class="card"
+            data-location="all"
+            data-type="apartment"
+            data-price="500000"
+        >
+
+            <div class="image-wrapper">
+
+                <img
+                    src="images/80fb6be9d250ce0f436ff534f275bafd.jpg"
+                    alt="Apartment in Bambili"
+                    loading="lazy"
+                >
+
+                <span class="verified">
+                    ✓ Verified
+                </span>
+
+                <button
+                    class="save-button"
+                    onclick="saveProperty(this)"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="card-body">
+
+                <span class="property-type">
+                    Apartment
+                </span>
+
+                <h3>
+                    2 Apartment
+                </h3>
+
+                <p class="location">
+                    <span>⌖</span>
+                    Black Rose 172, Bambili
+                </p>
+
+                <div class="card-bottom">
+
+                    <strong class="price">
+                        FCFA 500,000
+                    </strong>
+
+                    <span class="per-year">
+                        / Year
+                    </span>
+
+                </div>
+
+          <a href="contact.html" class="Contact-button">
+                    contact Us <span>→</span>
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PROPERTY 11 -->
+
+        <article
+            class="card"
+            data-location="all"
+            data-type="room"
+            data-price="300000"
+        >
+
+            <div class="image-wrapper">
+
+                <img
+                    src="images/65cce9cd9cc7d5f7559665451113511f.jpg"
+                    alt="Room Apartment in Bambili"
+                    loading="lazy"
+                >
+
+                <span class="verified">
+                    ✓ Verified
+                </span>
+
+                <button
+                    class="save-button"
+                    onclick="saveProperty(this)"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="card-body">
+
+                <span class="property-type">
+                    Room
+                </span>
+
+                <h3>
+                    Room Apartment
+                </h3>
+
+                <p class="location">
+                    <span>⌖</span>
+                    Mami Anna 12 Area, Bambili
+                </p>
+
+                <div class="card-bottom">
+
+                    <strong class="price">
+                        FCFA 300,000
+                    </strong>
+
+                    <span class="per-year">
+                        / Year
+                    </span>
+
+                </div>
+
+                <a href="contact.html" class="Contact-button">
+                    contact Us <span>→</span>
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PROPERTY 12 -->
+
+        <article
+            class="card"
+            data-location="commercial"
+            data-type="apartment"
+            data-price="500000"
+        >
+
+            <div class="image-wrapper">
+
+                <img
+                    src="images/80fb6be9d250ce0f436ff534f275bafd.jpg"
+                    alt="Family Apartment in Bambili"
+                    loading="lazy"
+                >
+
+                <span class="verified">
+                    ✓ Verified
+                </span>
+
+                <button
+                    class="save-button"
+                    onclick="saveProperty(this)"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="card-body">
+
+                <span class="property-type">
+                    Apartment
+                </span>
+
+                <h3>
+                    Family Apartment
+                </h3>
+
+                <p class="location">
+                    <span>⌖</span>
+                    Commercial Area, Bambili
+                </p>
+
+                <div class="card-bottom">
+
+                    <strong class="price">
+                        FCFA 500,000
+                    </strong>
+
+                    <span class="per-year">
+                        / Year
+                    </span>
+
+                </div>
+
+                 <a href="contact.html" class="Contact-button">
+                    contact Us <span>→</span>
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PROPERTY 13 -->
+
+        <article
+            class="card"
+            data-location="commercial"
+            data-type="apartment"
+            data-price="500000"
+        >
+
+            <div class="image-wrapper">
+
+                <img
+                    src="images/96ee2af9987f317047135f00e815dbbb.jpg"
+                    alt="Luxury Apartment in Bambili"
+                    loading="lazy"
+                >
+
+                <span class="verified">
+                    ✓ Verified
+                </span>
+
+                <button
+                    class="save-button"
+                    onclick="saveProperty(this)"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="card-body">
+
+                <span class="property-type">
+                    Luxury
+                </span>
+
+                <h3>
+                    Luxury Apartment
+                </h3>
+
+                <p class="location">
+                    <span>⌖</span>
+                    Commercial Area, Bambili
+                </p>
+
+                <div class="card-bottom">
+
+                    <strong class="price">
+                        FCFA 500,000
+                    </strong>
+
+                    <span class="per-year">
+                        / Year
+                    </span>
+
+                </div>
+
+           <a href="contact.html" class="Contact-button">
+                    contact Us <span>→</span>
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PROPERTY 14 -->
+
+        <article
+            class="card"
+            data-location="all"
+            data-type="apartment"
+            data-price="500000"
+        >
+
+            <div class="image-wrapper">
+
+                <img
+                    src="images/80fb6be9d250ce0f436ff534f275bafd.jpg"
+                    alt="Luxury Apartment in Bambili"
+                    loading="lazy"
+                >
+
+                <span class="verified">
+                    ✓ Verified
+                </span>
+
+                <button
+                    class="save-button"
+                    onclick="saveProperty(this)"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="card-body">
+
+                <span class="property-type">
+                    Luxury
+                </span>
+
+                <h3>
+                    Luxury Apartment
+                </h3>
+
+                <p class="location">
+                    <span>⌖</span>
+                    Commercial Area, Bambili
+                </p>
+
+                <div class="card-bottom">
+
+                    <strong class="price">
+                        FCFA 500,000
+                    </strong>
+
+                    <span class="per-year">
+                        / Year
+                    </span>
+
+                </div>
+
+           <a href="contact.html" class="Contact-button">
+                    contact Us <span>→</span>
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PROPERTY 15 -->
+
+        <article
+            class="card"
+            data-location="all"
+            data-type="apartment"
+            data-price="500000"
+        >
+
+            <div class="image-wrapper">
+
+                <img
+                    src="images/8b9a4aeaec0190f1d857899e47a55f88.jpg"
+                    alt="Luxury Apartment at HOJ Bambili"
+                    loading="lazy"
+                >
+
+                <span class="verified">
+                    ✓ Verified
+                </span>
+
+                <button
+                    class="save-button"
+                    onclick="saveProperty(this)"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="card-body">
+
+                <span class="property-type">
+                    Luxury
+                </span>
+
+                <h3>
+                    Luxury Apartment
+                </h3>
+
+                <p class="location">
+                    <span>⌖</span>
+                    HOJ, Corners, Bambili
+                </p>
+
+                <div class="card-bottom">
+
+                    <strong class="price">
+                        FCFA 500,000
+                    </strong>
+
+                    <span class="per-year">
+                        / Year
+                    </span>
+
+                </div>
+
+           <a href="contact.html" class="Contact-button">
+                    contact Us <span>→</span>
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PROPERTY 16 -->
+
+        <article
+            class="card"
+            data-location="campus"
+            data-type="room"
+            data-price="300000"
+        >
+
+            <div class="image-wrapper">
+
+                <img
+                    src="images/8b9a4aeaec0190f1d857899e47a55f88.jpg"
+                    alt="Self Contained Room in Bambili"
+                    loading="lazy"
+                >
+
+                <span class="verified">
+                    ✓ Verified
+                </span>
+
+                <button
+                    class="save-button"
+                    onclick="saveProperty(this)"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="card-body">
+
+                <span class="property-type">
+                    Self Contained
+                </span>
+
+                <h3>
+                    Self Contained
+                </h3>
+
+                <p class="location">
+                    <span>⌖</span>
+                    UBa City, Bambili
+                </p>
+
+                <div class="card-bottom">
+
+                    <strong class="price">
+                        FCFA 300,000
+                    </strong>
+
+                    <span class="per-year">
+                        / Year
+                    </span>
+
+                </div>
+
+              <a href="contact.html" class="Contact-button">
+                    contact Us <span>→</span>
+                </a>
+            </div>
+
+        </article>
+
+
+
+        <!-- PROPERTY 17 -->
+
+        <article
+            class="card"
+            data-location="commercial"
+            data-type="apartment"
+            data-price="700000"
+        >
+
+            <div class="image-wrapper">
+
+                <img
+                    src="images/96ee2af9987f317047135f00e815dbbb.jpg"
+                    alt="Luxury Apartment in Bambili"
+                    loading="lazy"
+                >
+
+                <span class="verified">
+                    ✓ Verified
+                </span>
+
+                <button
+                    class="save-button"
+                    onclick="saveProperty(this)"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="card-body">
+
+                <span class="property-type">
+                    Luxury
+                </span>
+
+                <h3>
+                    Luxury Apartment
+                </h3>
+
+                <p class="location">
+                    <span>⌖</span>
+                    Commercial Area, Bambili
+                </p>
+
+                <div class="card-bottom">
+
+                    <strong class="price">
+                        FCFA 700,000
+                    </strong>
+
+                    <span class="per-year">
+                        / Year
+                    </span>
+
+                </div>
+
+             <a href="contact.html" class="Contact-button">
+                    contact Us <span>→</span>
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PROPERTY 18 -->
+
+        <article
+            class="card"
+            data-location="down"
+            data-type="room"
+            data-price="100000"
+        >
+
+            <div class="image-wrapper">
+
+                <img
+                    src="images/96ee2af9987f317047135f00e815dbbb.jpg"
+                    alt="Single Room in Bambili"
+                    loading="lazy"
+                >
+
+                <span class="verified">
+                    ✓ Verified
+                </span>
+
+                <button
+                    class="save-button"
+                    onclick="saveProperty(this)"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="card-body">
+
+                <span class="property-type">
+                    Single Room
+                </span>
+
+                <h3>
+                    Single Room
+                </h3>
+
+                <p class="location">
+                    <span>⌖</span>
+                    Down Quarters, Bambili
+                </p>
+
+                <div class="card-bottom">
+
+                    <strong class="price">
+                        FCFA 100,000
+                    </strong>
+
+                    <span class="per-year">
+                        / Year
+                    </span>
+
+                </div>
+
+              <a href="contact.html" class="Contact-button">
+                    contact Us <span>→</span>
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PROPERTY 19 -->
+
+        <article
+            class="card"
+            data-location="up"
+            data-type="apartment"
+            data-price="500000"
+        >
+
+            <div class="image-wrapper">
+
+                <img
+                    src="images/96ee2af9987f317047135f00e815dbbb.jpg"
+                    alt="Luxury Apartment in Up Quarters"
+                    loading="lazy"
+                >
+
+                <span class="verified">
+                    ✓ Verified
+                </span>
+
+                <button
+                    class="save-button"
+                    onclick="saveProperty(this)"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="card-body">
+
+                <span class="property-type">
+                    Luxury
+                </span>
+
+                <h3>
+                    Luxury Apartment
+                </h3>
+
+                <p class="location">
+                    <span>⌖</span>
+                    Up Quarters, Bambili
+                </p>
+
+                <div class="card-bottom">
+
+                    <strong class="price">
+                        FCFA 500,000
+                    </strong>
+
+                    <span class="per-year">
+                        / Year
+                    </span>
+
+                </div>
+
+             
+                 <a href="contact.html" class="Contact-button">
+                    contact Us <span>→</span>
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PROPERTY 20 -->
+
+        <article
+            class="card"
+            data-location="commercial"
+            data-type="apartment"
+            data-price="500000"
+        >
+
+            <div class="image-wrapper">
+
+                <img
+                    src="images/f0deff0d005d7d591fb8fc9bd0930e8e.jpg"
+                    alt="Luxury Apartment in Bambili"
+                    loading="lazy"
+                >
+
+                <span class="verified">
+                    ✓ Verified
+                </span>
+
+                <button
+                    class="save-button"
+                    onclick="saveProperty(this)"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="card-body">
+
+                <span class="property-type">
+                    Luxury
+                </span>
+
+                <h3>
+                    Luxury Apartment
+                </h3>
+
+                <p class="location">
+                    <span>⌖</span>
+                    Commercial Area, Bambili
+                </p>
+
+                <div class="card-bottom">
+
+                    <strong class="price">
+                        FCFA 500,000
+                    </strong>
+
+                    <span class="per-year">
+                        / Year
+                    </span>
+
+                </div>
+
+                <a href="contact.html" class="Contact-button">
+                    contact Us <span>→</span>
+                </a>
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PROPERTY 21 -->
+
+        <article
+            class="card"
+            data-location="commercial"
+            data-type="apartment"
+            data-price="500000"
+        >
+
+            <div class="image-wrapper">
+
+                <img
+                    src="images/65cce9cd9cc7d5f7559665451113511f.jpg"
+                    alt="Luxury Apartment in Bambili"
+                    loading="lazy"
+                >
+
+                <span class="verified">
+                    ✓ Verified
+                </span>
+
+                <button
+                    class="save-button"
+                    onclick="saveProperty(this)"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="card-body">
+
+                <span class="property-type">
+                    Luxury
+                </span>
+
+                <h3>
+                    Luxury Apartment
+                </h3>
+
+                <p class="location">
+                    <span>⌖</span>
+                    Commercial Area, Bambili
+                </p>
+
+                <div class="card-bottom">
+
+                    <strong class="price">
+                        FCFA 500,000
+                    </strong>
+
+                    <span class="per-year">
+                        / Year
+                    </span>
+
+                </div>
+
+                <a href="contact.html" class="Contact-button">
+                    contact Us <span>→</span>
+                </a>
+            </div>
+
+        </article>
+
+
+
+        <!-- PROPERTY 22 -->
+
+        <article
+            class="card"
+            data-location="campus"
+            data-type="apartment"
+            data-price="500000"
+        >
+
+            <div class="image-wrapper">
+
+                <img
+                    src="images/5ea70422917091bdb0142c0c0ac35fa6.jpg"
+                    alt="Luxury Apartment near Campus"
+                    loading="lazy"
+                >
+
+                <span class="verified">
+                    ✓ Verified
+                </span>
+
+                <button
+                    class="save-button"
+                    onclick="saveProperty(this)"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="card-body">
+
+                <span class="property-type">
+                    Luxury
+                </span>
+
+                <h3>
+                    Luxury Apartment
+                </h3>
+
+                <p class="location">
+                    <span>⌖</span>
+                    Campus Area, Bambili
+                </p>
+
+                <div class="card-bottom">
+
+                    <strong class="price">
+                        FCFA 500,000
+                    </strong>
+
+                    <span class="per-year">
+                        / Year
+                    </span>
+
+                </div>
+
+                
+                 <a href="contact.html" class="Contact-button">
+                    contact Us <span>→</span>
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PROPERTY 23 -->
+
+        <article
+            class="card"
+            data-location="commercial"
+            data-type="studio"
+            data-price="500000"
+        >
+
+            <div class="image-wrapper">
+
+                <img
+                    src="images/59b70acda7b872b5cb1ddf7bc4d06320 (1).jpg"
+                    alt="Luxury Studio in Bambili"
+                    loading="lazy"
+                >
+
+                <span class="verified">
+                    ✓ Verified
+                </span>
+
+                <button
+                    class="save-button"
+                    onclick="saveProperty(this)"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="card-body">
+
+                <span class="property-type">
+                    Studio
+                </span>
+
+                <h3>
+                    Luxury Studio
+                </h3>
+
+                <p class="location">
+                    <span>⌖</span>
+                    Commercial Area, Bambili
+                </p>
+
+                <div class="card-bottom">
+
+                    <strong class="price">
+                        FCFA 500,000
+                    </strong>
+
+                    <span class="per-year">
+                        / Year
+                    </span>
+
+                </div>
+
+                <a href="contact.html" class="Contact-button">
+                    contact Us <span>→</span>
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PROPERTY 24 -->
+
+        <article
+            class="card"
+            data-location="up"
+            data-type="apartment"
+            data-price="500000"
+        >
+
+            <div class="image-wrapper">
+
+                <img
+                    src="images/39e6554225b55eb63366394828b27472.jpg"
+                    alt="Luxury Apartment in Mile 10"
+                    loading="lazy"
+                >
+
+                <span class="verified">
+                    ✓ Verified
+                </span>
+
+                <button
+                    class="save-button"
+                    onclick="saveProperty(this)"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="card-body">
+
+                <span class="property-type">
+                    Luxury
+                </span>
+
+                <h3>
+                    Luxury Apartment
+                </h3>
+
+                <p class="location">
+                    <span>⌖</span>
+                    Mile 10, Bambili
+                </p>
+
+                <div class="card-bottom">
+
+                    <strong class="price">
+                        FCFA 500,000
+                    </strong>
+
+                    <span class="per-year">
+                        / Year
+                    </span>
+
+                </div>
+
+                <a href="contact.html" class="contact-button">
+                    Contact Us <span>→</span>
+                </a>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+
+    <!-- NO RESULTS -->
+
+    <div
+        id="noResults"
+        class="no-results"
+    >
+
+        <div class="no-results-icon">
+            ⌂
+        </div>
+
+        <h3>
+            No properties found
+        </h3>
+
+        <p>
+            Try changing your search filters.
+        </p>
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+    <div class="footer-content">
+
+
+        <div class="footer-brand">
+
+            <h2>
+                Bambili <span>Nest</span>
+            </h2>
+
+            <p>
+                Find. Compare. Rent with Confidence.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Quick Links
+            </h4>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="property.html">
+                Listings
+            </a>
+
+            <a href="about.html">
+                About Us
+            </a>
+
+            <a href="contact.html">
+                Contact Us
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Students
+            </h4>
+
+            <a href="student-dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="profile.html">
+                Profile
+            </a>
+
+            <a href="saved-properties.html">
+                Saved Properties
+            </a>
+
+            <a href="reviews.html">
+                Reviews
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Contact
+            </h4>
+
+            <p>
+                bambilinest@gmail.com
+            </p>
+
+            <p>
+                +237 676 453 289
+            </p>
+
+            <p>
+                Bambili, Cameroon
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        © 2026 Bambili Nest. All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+function filterProperties() {
+
+    const location =
+        document.getElementById("location").value;
+
+    const type =
+        document.getElementById("propertyType").value;
+
+    const maximumPrice =
+        document.getElementById("price").value;
+
+    const cards =
+        document.querySelectorAll(".card");
+
+    let visibleCount = 0;
+
+
+    cards.forEach(function(card) {
+
+        const cardLocation =
+            card.dataset.location;
+
+        const cardType =
+            card.dataset.type;
+
+        const cardPrice =
+            Number(card.dataset.price);
+
+
+        const locationMatch =
+            location === "all" ||
+            cardLocation === location;
+
+
+        const typeMatch =
+            type === "all" ||
+            cardType === type;
+
+
+        const priceMatch =
+            maximumPrice === "all" ||
+            cardPrice <= Number(maximumPrice);
+
+
+        if (
+            locationMatch &&
+            typeMatch &&
+            priceMatch
+        ) {
+
+            card.style.display = "";
+
+            visibleCount++;
+
+        } else {
+
+            card.style.display = "none";
+
+        }
+
+    });
+
+
+    document.getElementById("propertyCount").textContent =
+        visibleCount;
+
+
+    document.getElementById("noResults").style.display =
+        visibleCount === 0 ? "block" : "none";
+
+}
+
+
+function saveProperty(button) {
+
+    if (
+        button.classList.contains("saved")
+    ) {
+
+        button.classList.remove("saved");
+
+        button.innerHTML = "♡";
+
+    } else {
+
+        button.classList.add("saved");
+
+        button.innerHTML = "♥";
+
+    }
+
+}
+
+</script>
+
+
+</body>
+</html>

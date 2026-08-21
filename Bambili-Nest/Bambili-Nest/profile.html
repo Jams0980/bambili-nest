@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Profile | Bambili Nest</title>
+
+    <link rel="stylesheet" href="profile.css">
+</head>
+
+<body>
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="header">
+
+    <!-- LOGO -->
+    <a href="index.html" class="logo">
+
+        <div class="logo-icon">
+
+            <svg viewBox="0 0 64 64">
+                <path
+                    d="M8 29L32 8l24 21"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+
+                <path
+                    d="M16 27v25h32V27"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="5"
+                />
+
+                <rect
+                    x="25"
+                    y="35"
+                    width="6"
+                    height="6"
+                    rx="1"
+                    fill="currentColor"
+                />
+
+                <rect
+                    x="35"
+                    y="35"
+                    width="6"
+                    height="6"
+                    rx="1"
+                    fill="currentColor"
+                />
+
+                <path
+                    d="M10 51c8 9 25 11 40 0"
+                    fill="none"
+                    stroke="#1fa34a"
+                    stroke-width="5"
+                    stroke-linecap="round"
+                />
+            </svg>
+
+        </div>
+
+        <div class="logo-text">
+
+            <h1>Bambili <span>Nest</span></h1>
+
+            <p>Find. Compare. Rent with Confidence.</p>
+
+        </div>
+
+    </a>
+
+
+    <!-- NAVIGATION -->
+
+    <nav class="nav">
+
+        <a href="index.html">Home</a>
+
+        <a href="property.html">Listings</a>
+
+        <a href="about.html">About Us</a>
+
+        <a href="contact.html">Contact Us</a>
+
+    </nav>
+
+
+    <!-- ACCOUNT -->
+
+    <div class="header-actions">
+
+        <a href="student-dashboard.html" class="dashboard-link">
+            Dashboard
+        </a>
+
+        <a href="login.html" class="login-link">
+            Logout
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     PROFILE HEADER
+===================================================== -->
+
+<section class="profile-hero">
+
+    <div class="profile-hero-content">
+
+        <span class="small-title">
+            STUDENT ACCOUNT
+        </span>
+
+        <h2>
+            My Profile
+        </h2>
+
+        <p>
+            Manage your personal information and accommodation
+            preferences.
+        </p>
+
+    </div>
+
+    <a href="student-dashboard.html" class="back-dashboard">
+        ← Back to Dashboard
+    </a>
+
+</section>
+
+
+<!-- =====================================================
+     MAIN CONTENT
+===================================================== -->
+
+<main class="profile-container">
+
+
+    <!-- =================================================
+         PROFILE CARD
+    ================================================== -->
+
+    <section class="profile-card profile-top">
+
+        <div class="avatar">
+
+            <span>S</span>
+
+        </div>
+
+
+        <div class="profile-name">
+
+            <h2>Student User</h2>
+
+            <p>
+                Bambili Student
+            </p>
+
+            <div class="account-status">
+
+                <span class="status-dot"></span>
+
+                Active Account
+
+            </div>
+
+        </div>
+
+
+        <div class="profile-actions">
+
+            <button type="button" class="photo-button">
+                Change Photo
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         PERSONAL INFORMATION
+    ================================================== -->
+
+    <section class="profile-card">
+
+        <div class="section-heading">
+
+            <div class="section-icon">
+
+                <svg viewBox="0 0 24 24">
+
+                    <circle
+                        cx="12"
+                        cy="8"
+                        r="4"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                    />
+
+                    <path
+                        d="M4 21c0-4 3.5-7 8-7s8 3 8 7"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                    />
+
+                </svg>
+
+            </div>
+
+            <div>
+
+                <h3>Personal Information</h3>
+
+                <p>
+                    Your basic account information.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <form>
+
+            <div class="form-grid">
+
+                <!-- FIRST NAME -->
+
+                <div class="form-group">
+
+                    <label for="first-name">
+                        First Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="first-name"
+                        value="Student"
+                    >
+
+                </div>
+
+
+                <!-- LAST NAME -->
+
+                <div class="form-group">
+
+                    <label for="last-name">
+                        Last Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="last-name"
+                        value="User"
+                    >
+
+                </div>
+
+
+                <!-- EMAIL -->
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        value="student@example.com"
+                    >
+
+                </div>
+
+
+                <!-- PHONE -->
+
+                <div class="form-group">
+
+                    <label for="phone">
+                        Phone Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        placeholder="+237 6XX XXX XXX"
+                    >
+
+                </div>
+
+
+                <!-- UNIVERSITY -->
+
+                <div class="form-group full">
+
+                    <label for="university">
+                        University / Institution
+                    </label>
+
+                    <input
+                        type="text"
+                        id="university"
+                        value="The University of Bamenda"
+                    >
+
+                </div>
+
+
+                <!-- STUDENT ID -->
+
+                <div class="form-group">
+
+                    <label for="student-id">
+                        Student ID
+                    </label>
+
+                    <input
+                        type="text"
+                        id="student-id"
+                        placeholder="Enter your student ID"
+                    >
+
+                </div>
+
+
+                <!-- COURSE -->
+
+                <div class="form-group">
+
+                    <label for="course">
+                        Course / Program
+                    </label>
+
+                    <input
+                        type="text"
+                        id="course"
+                        placeholder="Enter your course"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <div class="form-footer">
+
+                <button
+                    type="reset"
+                    class="cancel-button"
+                >
+                    Cancel
+                </button>
+
+                <button
+                    type="submit"
+                    class="save-button"
+                >
+                    Save Changes
+                </button>
+
+            </div>
+
+        </form>
+
+    </section>
+
+
+    <!-- =================================================
+         ACCOMMODATION PREFERENCES
+    ================================================== -->
+
+    <section class="profile-card">
+
+        <div class="section-heading">
+
+            <div class="section-icon green-icon">
+
+                <svg viewBox="0 0 24 24">
+
+                    <path
+                        d="M3 10.5L12 3l9 7.5"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+
+                    <path
+                        d="M5 9.5V21h14V9.5"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                    />
+
+                    <path
+                        d="M9 21v-6h6v6"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                    />
+
+                </svg>
+
+            </div>
+
+            <div>
+
+                <h3>Accommodation Preferences</h3>
+
+                <p>
+                    Tell us what type of accommodation you are looking for.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="form-grid">
+
+            <!-- LOCATION -->
+
+            <div class="form-group">
+
+                <label for="location">
+                    Preferred Area
+                </label>
+
+                <select id="location">
+
+                    <option>
+                        Select Area
+                    </option>
+
+                    <option>
+                        Up Quarter
+                    </option>
+
+                    <option>
+                        Down Quarter
+                    </option>
+
+                    <option>
+                        School Area
+                    </option>
+
+                    <option>
+                        Bambui
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- PROPERTY -->
+
+            <div class="form-group">
+
+                <label for="property-type">
+                    Preferred Property Type
+                </label>
+
+                <select id="property-type">
+
+                    <option>
+                        Select Property Type
+                    </option>
+
+                    <option>
+                        Single Room
+                    </option>
+
+                    <option>
+                        Studio
+                    </option>
+
+                    <option>
+                        Apartment
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- PRICE -->
+
+            <div class="form-group">
+
+                <label for="budget">
+                    Maximum Monthly Budget
+                </label>
+
+                <select id="budget">
+
+                    <option>
+                        Select Budget
+                    </option>
+
+                    <option>
+                        Below 50,000 FCFA
+                    </option>
+
+                    <option>
+                        50,000 - 100,000 FCFA
+                    </option>
+
+                    <option>
+                        100,000 - 150,000 FCFA
+                    </option>
+
+                    <option>
+                        Above 150,000 FCFA
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- ROOMMATE -->
+
+            <div class="form-group">
+
+                <label for="roommate">
+                    Room Preference
+                </label>
+
+                <select id="roommate">
+
+                    <option>
+                        Select Preference
+                    </option>
+
+                    <option>
+                        Private Room
+                    </option>
+
+                    <option>
+                        Shared Room
+                    </option>
+
+                    <option>
+                        Either
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <div class="preference-save">
+
+            <button class="save-button">
+                Save Preferences
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         ACCOUNT SECURITY
+    ================================================== -->
+
+    <section class="profile-card">
+
+        <div class="section-heading">
+
+            <div class="section-icon blue-icon">
+
+                <svg viewBox="0 0 24 24">
+
+                    <rect
+                        x="4"
+                        y="10"
+                        width="16"
+                        height="11"
+                        rx="2"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                    />
+
+                    <path
+                        d="M8 10V7a4 4 0 018 0v3"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                    />
+
+                    <circle
+                        cx="12"
+                        cy="15"
+                        r="1"
+                        fill="currentColor"
+                    />
+
+                </svg>
+
+            </div>
+
+            <div>
+
+                <h3>Account Security</h3>
+
+                <p>
+                    Keep your Bambili Nest account secure.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="security-row">
+
+            <div>
+
+                <h4>Password</h4>
+
+                <p>
+                    Your password is protected.
+                </p>
+
+            </div>
+
+            <a href="settings.html" class="security-button">
+                Change Password
+            </a>
+
+        </div>
+
+
+        <div class="security-row">
+
+            <div>
+
+                <h4>Email Verification</h4>
+
+                <p>
+                    Your email verification status.
+                </p>
+
+            </div>
+
+            <span class="verified">
+                Verified
+            </span>
+
+        </div>
+
+
+        <div class="security-row">
+
+            <div>
+
+                <h4>Account Status</h4>
+
+                <p>
+                    Your Bambili Nest account is active.
+                </p>
+
+            </div>
+
+            <span class="active">
+                Active
+            </span>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <div class="footer-brand">
+
+            <h3>
+                Bambili <span>Nest</span>
+            </h3>
+
+            <p>
+                Find. Compare. Rent with Confidence.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h4>Quick Links</h4>
+
+            <a href="index.html">Home</a>
+
+            <a href="property.html">Listings</a>
+
+            <a href="about.html">About Us</a>
+
+            <a href="contact.html">Contact Us</a>
+
+        </div>
+
+
+        <div>
+
+            <h4>Student</h4>
+
+            <a href="student-dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="saved-properties.html">
+                Saved Properties
+            </a>
+
+            <a href="reviews.html">
+                Reviews
+            </a>
+
+            <a href="settings.html">
+                Settings
+            </a>
+
+        </div>
+
+
+        <div>
+
+            <h4>Contact</h4>
+
+            <p>
+                bambilinest@gmail.com
+            </p>
+
+            <p>
+                +237 676 453 289
+            </p>
+
+            <p>
+                Bambili, Cameroon
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        © 2026 Bambili Nest. All Rights Reserved.
+
+    </div>
+
+</footer>
+
+</body>
+</html>

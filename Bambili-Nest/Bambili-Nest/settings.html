@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Settings | Bambili Nest</title>
+
+    <link rel="stylesheet" href="settings.css">
+
+</head>
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="header">
+
+    <a href="index.html" class="logo">
+
+        <div class="logo-icon">
+
+            <svg viewBox="0 0 64 64">
+
+                <path
+                    d="M8 29L32 8l24 21"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+
+                <path
+                    d="M16 27v25h32V27"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="5"
+                />
+
+                <rect
+                    x="25"
+                    y="35"
+                    width="6"
+                    height="6"
+                    rx="1"
+                    fill="currentColor"
+                />
+
+                <rect
+                    x="35"
+                    y="35"
+                    width="6"
+                    height="6"
+                    rx="1"
+                    fill="currentColor"
+                />
+
+                <path
+                    d="M10 51c8 9 25 11 40 0"
+                    fill="none"
+                    stroke="#1fa34a"
+                    stroke-width="5"
+                    stroke-linecap="round"
+                />
+
+            </svg>
+
+        </div>
+
+
+        <div class="logo-text">
+
+            <h1>Bambili <span>Nest</span></h1>
+
+            <p>Find. Compare. Rent with Confidence.</p>
+
+        </div>
+
+    </a>
+
+
+    <nav class="nav">
+
+        <a href="index.html">Home</a>
+
+        <a href="property.html">Listings</a>
+
+        <a href="about.html">About Us</a>
+
+        <a href="contact.html">Contact Us</a>
+
+    </nav>
+
+
+    <div class="header-actions">
+
+        <a
+            href="student-dashboard.html"
+            class="dashboard-link"
+        >
+            Dashboard
+        </a>
+
+        <a
+            href="login.html"
+            class="logout-link"
+        >
+            Logout
+        </a>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     PAGE HERO
+===================================================== -->
+
+<section class="settings-hero">
+
+    <div>
+
+        <span>ACCOUNT MANAGEMENT</span>
+
+        <h2>Settings</h2>
+
+        <p>
+            Manage your Bambili Nest account, privacy,
+            notifications and security preferences.
+        </p>
+
+    </div>
+
+
+    <a
+        href="student-dashboard.html"
+        class="back-button"
+    >
+        ← Back to Dashboard
+    </a>
+
+</section>
+
+
+
+<!-- =====================================================
+     SETTINGS LAYOUT
+===================================================== -->
+
+<main class="settings-container">
+
+
+    <!-- =================================================
+         SETTINGS SIDEBAR
+    ================================================== -->
+
+    <aside class="settings-menu">
+
+        <h3>Settings</h3>
+
+
+        <a href="#account" class="menu-item active">
+
+            <span class="menu-icon">
+
+                <svg viewBox="0 0 24 24">
+
+                    <circle
+                        cx="12"
+                        cy="8"
+                        r="4"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                    />
+
+                    <path
+                        d="M4 21c0-4 3.5-7 8-7s8 3 8 7"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                    />
+
+                </svg>
+
+            </span>
+
+            Account
+
+        </a>
+
+
+        <a href="#notifications" class="menu-item">
+
+            <span class="menu-icon">
+
+                <svg viewBox="0 0 24 24">
+
+                    <path
+                        d="M18 9a6 6 0 00-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                    />
+
+                    <path
+                        d="M10 21h4"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                    />
+
+                </svg>
+
+            </span>
+
+            Notifications
+
+        </a>
+
+
+        <a href="#privacy" class="menu-item">
+
+            <span class="menu-icon">
+
+                <svg viewBox="0 0 24 24">
+
+                    <rect
+                        x="4"
+                        y="10"
+                        width="16"
+                        height="11"
+                        rx="2"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                    />
+
+                    <path
+                        d="M8 10V7a4 4 0 018 0v3"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                    />
+
+                </svg>
+
+            </span>
+
+            Privacy
+
+        </a>
+
+
+        <a href="#security" class="menu-item">
+
+            <span class="menu-icon">
+
+                <svg viewBox="0 0 24 24">
+
+                    <path
+                        d="M12 3l8 3v6c0 5-3.4 8-8 9-4.6-1-8-4-8-9V6l8-3z"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                    />
+
+                    <path
+                        d="M9 12l2 2 4-4"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+
+                </svg>
+
+            </span>
+
+            Security
+
+        </a>
+
+    </aside>
+
+
+
+    <!-- =================================================
+         SETTINGS CONTENT
+    ================================================== -->
+
+    <section class="settings-content">
+
+
+        <!-- =================================================
+             ACCOUNT
+        ================================================== -->
+
+        <section
+            class="settings-card"
+            id="account"
+        >
+
+            <div class="card-heading">
+
+                <div class="heading-icon">
+
+                    <svg viewBox="0 0 24 24">
+
+                        <circle
+                            cx="12"
+                            cy="8"
+                            r="4"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        />
+
+                        <path
+                            d="M4 21c0-4 3.5-7 8-7s8 3 8 7"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        />
+
+                    </svg>
+
+                </div>
+
+                <div>
+
+                    <h3>Account Information</h3>
+
+                    <p>
+                        Manage your basic account details.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="setting-row">
+
+                <div>
+
+                    <h4>Email Address</h4>
+
+                    <p>
+                        student@example.com
+                    </p>
+
+                </div>
+
+                <a
+                    href="profile.html"
+                    class="outline-button"
+                >
+                    Edit
+                </a>
+
+            </div>
+
+
+            <div class="setting-row">
+
+                <div>
+
+                    <h4>Phone Number</h4>
+
+                    <p>
+                        +237 6XX XXX XXX
+                    </p>
+
+                </div>
+
+                <a
+                    href="profile.html"
+                    class="outline-button"
+                >
+                    Edit
+                </a>
+
+            </div>
+
+
+            <div class="setting-row">
+
+                <div>
+
+                    <h4>Profile Information</h4>
+
+                    <p>
+                        Update your name, university and student information.
+                    </p>
+
+                </div>
+
+                <a
+                    href="profile.html"
+                    class="outline-button"
+                >
+                    Profile
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             NOTIFICATIONS
+        ================================================== -->
+
+        <section
+            class="settings-card"
+            id="notifications"
+        >
+
+            <div class="card-heading">
+
+                <div class="heading-icon">
+
+                    <svg viewBox="0 0 24 24">
+
+                        <path
+                            d="M18 9a6 6 0 00-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                        />
+
+                        <path
+                            d="M10 21h4"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                        />
+
+                    </svg>
+
+                </div>
+
+                <div>
+
+                    <h3>Notifications</h3>
+
+                    <p>
+                        Choose how Bambili Nest keeps you updated.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="toggle-row">
+
+                <div>
+
+                    <h4>New Property Alerts</h4>
+
+                    <p>
+                        Get notified when new properties match your preferences.
+                    </p>
+
+                </div>
+
+                <label class="switch">
+
+                    <input
+                        type="checkbox"
+                        checked
+                    >
+
+                    <span class="slider"></span>
+
+                </label>
+
+            </div>
+
+
+            <div class="toggle-row">
+
+                <div>
+
+                    <h4>Saved Property Updates</h4>
+
+                    <p>
+                        Receive updates about properties you saved.
+                    </p>
+
+                </div>
+
+                <label class="switch">
+
+                    <input
+                        type="checkbox"
+                        checked
+                    >
+
+                    <span class="slider"></span>
+
+                </label>
+
+            </div>
+
+
+            <div class="toggle-row">
+
+                <div>
+
+                    <h4>Messages from Landlords</h4>
+
+                    <p>
+                        Receive notifications when a landlord contacts you.
+                    </p>
+
+                </div>
+
+                <label class="switch">
+
+                    <input
+                        type="checkbox"
+                        checked
+                    >
+
+                    <span class="slider"></span>
+
+                </label>
+
+            </div>
+
+
+            <div class="toggle-row">
+
+                <div>
+
+                    <h4>Promotional Updates</h4>
+
+                    <p>
+                        Receive useful Bambili Nest announcements and offers.
+                    </p>
+
+                </div>
+
+                <label class="switch">
+
+                    <input type="checkbox">
+
+                    <span class="slider"></span>
+
+                </label>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             PRIVACY
+        ================================================== -->
+
+        <section
+            class="settings-card"
+            id="privacy"
+        >
+
+            <div class="card-heading">
+
+                <div class="heading-icon purple-icon">
+
+                    <svg viewBox="0 0 24 24">
+
+                        <rect
+                            x="4"
+                            y="10"
+                            width="16"
+                            height="11"
+                            rx="2"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        />
+
+                        <path
+                            d="M8 10V7a4 4 0 018 0v3"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        />
+
+                    </svg>
+
+                </div>
+
+                <div>
+
+                    <h3>Privacy</h3>
+
+                    <p>
+                        Control what information is visible to other users.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="toggle-row">
+
+                <div>
+
+                    <h4>Show Phone Number</h4>
+
+                    <p>
+                        Allow landlords to see your phone number when necessary.
+                    </p>
+
+                </div>
+
+                <label class="switch">
+
+                    <input type="checkbox">
+
+                    <span class="slider"></span>
+
+                </label>
+
+            </div>
+
+
+            <div class="toggle-row">
+
+                <div>
+
+                    <h4>Show Student Profile</h4>
+
+                    <p>
+                        Allow your basic student profile to be visible when contacting landlords.
+                    </p>
+
+                </div>
+
+                <label class="switch">
+
+                    <input
+                        type="checkbox"
+                        checked
+                    >
+
+                    <span class="slider"></span>
+
+                </label>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SECURITY
+        ================================================== -->
+
+        <section
+            class="settings-card"
+            id="security"
+        >
+
+            <div class="card-heading">
+
+                <div class="heading-icon blue-icon">
+
+                    <svg viewBox="0 0 24 24">
+
+                        <path
+                            d="M12 3l8 3v6c0 5-3.4 8-8 9-4.6-1-8-4-8-9V6l8-3z"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        />
+
+                        <path
+                            d="M9 12l2 2 4-4"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+
+                    </svg>
+
+                </div>
+
+                <div>
+
+                    <h3>Security</h3>
+
+                    <p>
+                        Protect your Bambili Nest account.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="security-item">
+
+                <div>
+
+                    <h4>Password</h4>
+
+                    <p>
+                        Change your account password regularly.
+                    </p>
+
+                </div>
+
+                <button
+                    type="button"
+                    class="outline-button"
+                    onclick="changePassword()"
+                >
+                    Change Password
+                </button>
+
+            </div>
+
+
+            <div class="security-item">
+
+                <div>
+
+                    <h4>Email Verification</h4>
+
+                    <p>
+                        Your email address is currently verified.
+                    </p>
+
+                </div>
+
+                <span class="verified">
+                    Verified
+                </span>
+
+            </div>
+
+
+            <div class="security-item">
+
+                <div>
+
+                    <h4>Two-Step Verification</h4>
+
+                    <p>
+                        Add another layer of protection to your account.
+                    </p>
+
+                </div>
+
+                <label class="switch">
+
+                    <input type="checkbox">
+
+                    <span class="slider"></span>
+
+                </label>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             DANGER ZONE
+        ================================================== -->
+
+        <section class="danger-card">
+
+            <div>
+
+                <h3>Delete Account</h3>
+
+                <p>
+                    Permanently remove your Bambili Nest account
+                    and associated information.
+                </p>
+
+            </div>
+
+            <button
+                type="button"
+                class="delete-button"
+                onclick="deleteAccount()"
+            >
+                Delete Account
+            </button>
+
+        </section>
+
+
+    </section>
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+    <div class="footer-content">
+
+
+        <div class="footer-brand">
+
+            <h3>
+                Bambili <span>Nest</span>
+            </h3>
+
+            <p>
+                Find. Compare. Rent with Confidence.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h4>Quick Links</h4>
+
+            <a href="index.html">Home</a>
+
+            <a href="property.html">Listings</a>
+
+            <a href="about.html">About Us</a>
+
+            <a href="contact.html">Contact Us</a>
+
+        </div>
+
+
+        <div>
+
+            <h4>Student</h4>
+
+            <a href="student-dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="profile.html">
+                Profile
+            </a>
+
+            <a href="saved-properties.html">
+                Saved Properties
+            </a>
+
+            <a href="reviews.html">
+                Reviews
+            </a>
+
+        </div>
+
+
+        <div>
+
+            <h4>Contact</h4>
+
+            <p>bambilinest@gmail.com</p>
+
+            <p>+237 676 453 289</p>
+
+            <p>Bambili, Cameroon</p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        © 2026 Bambili Nest. All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+
+<script>
+
+function changePassword() {
+
+    alert(
+        "Password change feature will be available after connecting the account system."
+    );
+
+}
+
+
+function deleteAccount() {
+
+    const confirmation = confirm(
+        "Are you sure you want to delete your Bambili Nest account? This action cannot be undone."
+    );
+
+    if (confirmation) {
+
+        alert(
+            "Account deletion request submitted."
+        );
+
+    }
+
+}
+
+</script>
+
+
+</body>
+</html>
